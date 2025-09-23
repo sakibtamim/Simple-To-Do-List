@@ -29,6 +29,10 @@ const App = () => {
     setInputValue(item);
     setEditIndex(index);
   };
+  let handleDelete = (index) => {
+    const newList = list.filter((_, i) => i !== index);
+    setList(newList);
+  };
 
   return (
     <section className="w-[600px] mx-auto pt-1">
@@ -63,7 +67,10 @@ const App = () => {
             >
               <LuPlus className="text-inputtext text-[38px]" />
             </div>
-            <div className="absolute top-1/2 -translate-y-1/2 right-[20px]">
+            <div
+              className="absolute top-1/2 -translate-y-1/2 right-[20px]"
+              onClick={() => handleDelete(index)}
+            >
               <RxCross2 className="text-inputtext text-[38px]" />
             </div>
           </div>
