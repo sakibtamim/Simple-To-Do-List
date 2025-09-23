@@ -6,3 +6,6 @@
   --color-inputtext: #36363f;
   --color-border: #1e180f;
 }
+body {
+  background-color: #fcfcf3;
+}
