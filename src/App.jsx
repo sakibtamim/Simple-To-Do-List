@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LuPlus } from "react-icons/lu";
+import { MdEdit } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 
 const App = () => {
@@ -35,7 +36,7 @@ const App = () => {
   };
 
   return (
-    <section className="lg:w-[600px] w-[400px] mx-auto pt-1  ">
+    <section className="lg:w-[600px] w-[400px] mx-auto lg:pt-1  ">
       <div className="lg:w-[600px] w-[400px] h-fit rounded-md bg-bg">
         <div className="lg:pt-[10px] pt-[6px] lg:pb-[20px] pb-[8px] lg:text-[40px] text-[24px] text-box font-semibold text-center">
           To-Do List
@@ -62,10 +63,10 @@ const App = () => {
               {item}
             </p>
             <div
-              className="absolute top-1/2 -translate-y-1/2 lg:right-[60px] right-[40px] "
+              className="absolute top-1/2 -translate-y-1/2 lg:right-[66px] right-[40px] "
               onClick={() => handleUpdate(item, index)}
             >
-              <LuPlus className="text-inputtext lg:text-[38px] text-[20px]" />
+              <MdEdit className="text-inputtext lg:text-[32px] text-[20px]" />
             </div>
             <div
               className="absolute top-1/2 -translate-y-1/2 lg:right-[20px] right-[16px]"
